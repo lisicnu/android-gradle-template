@@ -1,43 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
     <title>Android-gradle-template by snowdream</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/snowdream/android-gradle-template">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/snowdream/android-gradle-template/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/snowdream/android-gradle-template/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <a id="forkme_banner" href="https://github.com/snowdream/android-gradle-template">View on GitHub</a>
+    <div class="shell">
 
-    <div class="wrapper">
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Android-gradle-template</h1>
+            <h2>a template for android with gradle</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
 
-      <section>
-        <div id="title">
-          <h1>Android-gradle-template</h1>
-          <p>a template for android with gradle</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/snowdream">snowdream</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/snowdream/android-gradle-template/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/snowdream/android-gradle-template/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
 
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h1>
 <a name="android-gradle-template" class="anchor" href="#android-gradle-template"><span class="octicon octicon-link"></span></a>android-gradle-template</h1>
 
@@ -56,8 +64,8 @@
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
-<li>Gradle 1.10 with the plugin 0.8.0</li>
-<li>SDK with Build Tools 19.0.0+</li>
+<li>Gradle 1.10 or 1.11 with the plugin 0.9.0</li>
+<li>SDK with Build Tools 19.0.0. Some features may require a more recent version.</li>
 </ul><h2>
 <a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>HOW TO</h2>
 
@@ -77,7 +85,7 @@
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<pre><code>Copyright (C) 2013 Snowdream Mobile &lt;yanghui1986527@gmail.com&gt;
+<pre><code>Copyright (C) 2014 Snowdream Mobile &lt;yanghui1986527@gmail.com&gt;
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -93,8 +101,20 @@ limitations under the License.
 </code></pre>
       </section>
 
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/snowdream">snowdream</a> can be found on <a href="https://github.com/snowdream/android-gradle-template">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
